@@ -3,6 +3,7 @@ import About from './About'
 import Headers from './Header'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
+import Footer from './Footer';
 import 'swiper/css';
 import "../styles/homePage.css";
 import "tailwindcss/tailwind.css";
@@ -15,26 +16,26 @@ const HomePage = () => {
   ];
   return (
     <div className="main-container">
-     
+      <div className="header">
         <Headers />
-      
+      </div>
 
       <div className="swipe">
         <Swiper
-          spaceBetween={50}
+          spaceBetween={2}
           slidesPerView={1}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
 
           {slides.map(slide => (
-            <SwiperSlide> <Image className="sliderImage" style={{ width: "80%", height: "800px" }} src={slide.url} width={0} height={0} sizes="100vw" alt="image" /></SwiperSlide>
-
-
+            <SwiperSlide> <Image className="sliderImage" style={{ width: "100%", height: "596px" }} src={slide.url} width={0} height={0} sizes="100vw" alt="image" /></SwiperSlide>
           ))}
         </Swiper>
       </div>
-
+      <div className="index__footer">
+        <Footer/>
+      </div>
     </div>
   );
 }

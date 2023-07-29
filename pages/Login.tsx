@@ -2,10 +2,15 @@ import React from 'react';
 import Header from './Header';
 import Image from 'next/image';
 import '../styles/login.css';
+import Footer from './Footer';
 const Login = () => {
   return (
-    <div>
-      <Header />
+
+    <div className="login">
+      <div className="contact-header">
+        <Header />
+      </div>
+
       <div className="center">
         <div className="login__image">
           <Image src="https://as1.ftcdn.net/v2/jpg/01/45/19/76/1000_F_145197600_rYWzKzMBC69xds3FAPvAWHV6fwITY8ZF.jpg" className="object-cover rounded-lg" fill alt="kokan image" />
@@ -16,14 +21,14 @@ const Login = () => {
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
                 Username
               </label>
-              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"/>
+              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
             </div>
             <div className="mb-6">
-              <label className="block text-gray-700 text-sm font-bold mb-2"  htmlFor="password">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
                 Password
               </label>
-              <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************"/>
-                <p className="text-red-500 text-xs italic">Please choose a password.</p>
+              <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" />
+              <p className="text-red-500 text-xs italic">Please choose a password.</p>
             </div>
             <div className="flex items-center justify-between">
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
@@ -39,8 +44,16 @@ const Login = () => {
           </p>
         </div>
       </div>
+
+
+
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
-    
+
+
+
   );
 }
 
