@@ -3,10 +3,12 @@
 
 .about__footer {
     background-color: #0f172bed;
+    width: 100%;
 }
 
 .about__body__content1 {
     display: flex;
+
 }
 
 .about__body__content1__images {
@@ -22,10 +24,48 @@
     margin-top: 12%;
 }
 
-.about__image__content1 {
+/* .about__image__content1 {
     padding: 5px;
     width: 50%;
     height: 50%;
+    animation: mymove 5s;
+} */
+.photo1 {
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    animation: mymove 2s;
+}
+
+.photo2 {
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    animation: mymove 3s;
+}
+
+.photo3 {
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    animation: mymove 4s;
+}
+
+.photo4 {
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    animation: mymove 5s;
+}
+
+@keyframes mymove {
+    from {
+        transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 .image2 {
@@ -42,12 +82,12 @@
 
 .about__body__content1__count {
     display: flex;
-    
+
 }
 
 .about__body__content1__count1 {
     width: 50%;
-    border-left:8px solid #FEA116;
+    border-left: 8px solid #FEA116;
     margin-bottom: 20px;
     padding-left: 20px;
     width: 100%;
@@ -55,56 +95,64 @@
 
 .about__body__content1__count2 {
     width: 50%;
-    border-left:8px solid #FEA116;
+    border-left: 8px solid #FEA116;
     margin-bottom: 20px;
     padding-left: 20px;
     width: 100%;
 }
 
-.about__body__content1__count__content{
-   display: flex;
+.about__body__content1__count__content {
+    display: flex;
 }
+
 .about__body__content1__count__content>h1 {
     font-size: 3rem;
     font-weight: 800;
     line-height: 1.2;
-    font-family: "Nunito",sans-serif;
+    font-family: "Nunito", sans-serif;
     color: #FEA116
 }
-.about__body__content1__count__content__p{
+
+.about__body__content1__count__content__p {
     text-transform: capitalize;
 }
-.about__body__content1__count__content__p > h6{
+
+.about__body__content1__count__content__p>h6 {
     text-transform: uppercase;
-    font-family: "Nunito",sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 800;
     line-height: 1.2;
     color: #0F172B;
 }
-.about__body__content1__count__content__p{
+
+.about__body__content1__count__content__p {
     padding-left: 20px;
 }
-.about__body__content1__text > h1{
+
+.about__body__content1__text>h1 {
     font-size: 2.5rem;
-    font-family: "Nunito",sans-serif;
-    font-weight:900;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
     line-height: 1.2;
     color: #0F172B;
 }
-.about__body__content1__text > p{
-    font-family: "Heebo",sans-serif;
+
+.about__body__content1__text>p {
+    font-family: "Heebo", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #666565;
 }
-.about__body__content1__text > h5{
+
+.about__body__content1__text>h5 {
     font-family: 'Pacifico', cursive;
-    color: #FEA116 ;
+    color: #FEA116;
     font-weight: 400;
     font-size: 1.25rem;
 }
-.about__body__content1__text > h5::after{
+
+.about__body__content1__text>h5::after {
     display: inline-block;
     content: "";
     border-top: .2rem solid #fea116;
@@ -131,24 +179,216 @@
     .about__body__content1__text {
         width: 98%;
         margin-top: 0;
-        border: 1px solid black;
         padding: 10px;
     }
-    .about__body__content1__count{
+
+    .about__body__content1__count {
         display: block;
     }
-    .about__body__content1__count1{
-        border-left:8px solid #FEA116;
+
+    .about__body__content1__count1 {
+        border-left: 8px solid #FEA116;
         margin-bottom: 20px;
         padding-left: 20px;
         width: 100%;
     }
-    .about__body__content1__count2{
+
+    .about__body__content1__count2 {
         width: 100%;
-        border-left:8px solid #FEA116;
-        
+        border-left: 8px solid #FEA116;
+
         padding-left: 20px;
         margin-bottom: 10px;
     }
 
+}
+
+.about__body__content2 {
+
+    text-align: center;
+    padding: 10px;
+
+}
+
+.about__body__content2_section1>h5 {
+    font-family: 'Pacifico', cursive;
+    color: #FEA116;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.about__body__content2_section1>h5::after {
+
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid #fea116;
+    width: 3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+    /* transform: translateY(1.4rem); */
+    transform: translateX(0.4rem);
+}
+
+.about__body__content2_section1>h5::before {
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid #fea116;
+    width: 3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+    /* transform: translateY(-1.4rem); */
+    transform: translateX(-0.5rem);
+}
+
+.about__body__content2_section1>h1 {
+    font-size: 2.5rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: bolder;
+    line-height: 1.2;
+    color: #0F172B;
+
+}
+
+.profile1{
+    position:relative;
+    top:0;
+    animation: newtransition 2.5s;
+}
+.profile2{
+    position:relative;
+    top:0;
+  
+    animation: newtransition 3.5s;
+  
+}
+.profile3{
+    position:relative;
+    top:0;
+   
+    animation: newtransition 4.8s;
+    
+}
+.profile4{
+    position:relative;
+    top:0;
+  
+    animation: newtransition 5.5s;
+   
+}
+@keyframes newtransition {
+    from {top: 300px;}
+    to {bottom: 0;}
+  }
+.about__body__content2_section2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+.about__body__content2_section2__chefs__profile {
+    padding: 10px;
+    height: 100%;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.about__body__content2_section2__chefs__profile>h5 {
+    font-size: 1.25rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0F172B;
+}
+
+.about__body__content2_section2__chefs__profile>small {
+    font-size: 0.875em;
+    color: #666565;
+}
+
+.profile__image {
+    transition: transform .5s ease;
+}
+
+/* .profile__image:hover{
+    transform: scale(1.2);
+} */
+.chef__image {
+    overflow: hidden;
+}
+
+.about__body__content2_section2__chefs__social__icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25%;
+    width: 100%;
+    transition: 0.5s;
+    height: 1%;
+    visibility: hidden;
+
+}
+
+.profile__icon {
+    visibility: hidden;
+    background-color: #FEA116;
+    color: white;
+    margin-right: 5px;
+    padding: 5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 20% !important;
+    height: 90% !important;
+    transition: height 0.5s;
+}
+
+.about__body__content2_section2__chefs__profile:hover>.about__body__content2_section2__chefs__social__icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25%;
+    width: 100%;
+    height: 14%;
+    transition: height 0.5s;
+    visibility: visible;
+}
+
+.about__body__content2_section2__chefs__profile:hover>.about__body__content2_section2__chefs__social__icon>.profile__icon {
+    background-color: #FEA116;
+    color: white;
+    margin-right: 5px;
+    padding: 5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 20% !important;
+    transition: 0.5s;
+    visibility: visible;
+
+}
+
+.about__body__content2_section2__chefs__profile:hover>.chef__image>.profile__image {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 960px) {
+    .about__body__content2_section2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 2;
+        justify-content: space-around;
+    }
+
+    .about__body__content2_section2__chefs__profile {
+        width: 310px !important;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .about__body__content2_section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }

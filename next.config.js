@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        
-        domains:["cdn.pixabay.com"],
         remotePatterns: [
+            {
+              protocol: 'https',
+              hostname: "img.freepik.com",
+            },
             {
               protocol: 'https',
               hostname: "as1.ftcdn.net",
@@ -13,32 +15,6 @@ const nextConfig = {
             {
               protocol: 'https',
               hostname: "themewagon.github.io",
-              port: '',
-              pathname: '/restoran/img/about-1.jpg',
-            },
-            {
-              protocol: 'https',
-              hostname: "themewagon.github.io",
-              port: '',
-              pathname: '/restoran/img/about-2.jpg',
-            },
-            {
-              protocol: 'https',
-              hostname: "themewagon.github.io",
-              port: '',
-              pathname: '/restoran/img/about-3.jpg',
-            },
-            {
-              protocol: 'https',
-              hostname: "themewagon.github.io",
-              port: '',
-              pathname: '/restoran/img/about-4.jpg',
-            },
-            {
-              protocol: 'https',
-              hostname: "themewagon.github.io",
-              port: '',
-              pathname: '/restoran/img/about-1.jpg',
             },
           ],
         

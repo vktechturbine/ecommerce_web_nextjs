@@ -9,10 +9,10 @@ import "../styles/homePage.css";
 import "tailwindcss/tailwind.css";
 const HomePage = () => {
   const slides = [
-    { url: "https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg" },
-    { url: "https://cdn.pixabay.com/photo/2016/12/17/18/51/spices-1914130_1280.jpg" },
-    { url: "https://cdn.pixabay.com/photo/2017/06/06/22/37/italian-cuisine-2378729_1280.jpg" },
-    { url: "https://cdn.pixabay.com/photo/2018/03/07/18/42/menu-3206749_640.jpg" }
+    { url: "https://img.freepik.com/free-vector/background-with-different-meals_23-2147871165.jpg?size=626&ext=jpg&ga=GA1.1.1212338543.1689843878&semt=ais" },
+    { url: "https://img.freepik.com/free-photo/various-vegetables-black-table-with-space-message_1220-616.jpg?w=996&t=st=1690803228~exp=1690803828~hmac=0aef0f251ebdd02dc487e0ce03673b0d892e2c8eba18d88f87ba98879acd3a1a" },
+    { url: "https://img.freepik.com/free-photo/top-view-yummy-cutlets-with-onion-rings-grey-background-meal-photo-dish-meat_140725-47088.jpg?t=st=1690803321~exp=1690803921~hmac=3fc42aa20a8573979c737c74dac56755a1e873c7ccb976bcf982455b88ce23b0" },
+    { url: "https://img.freepik.com/premium-photo/salad-arugula-prosciutto-strawberries-capers-black-stone-plate-italian-cuisine_187166-49342.jpg?w=996" }
   ];
   return (
     <div className="main-container">

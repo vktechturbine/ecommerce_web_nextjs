@@ -8,6 +8,7 @@
 }
 .index__footer{
     background-color: #0f172bed;
+    z-index: -1;
 }
 .header__logo>.img {
     /* backgrousnd-color: red; */
@@ -57,6 +58,7 @@
 
 .sliderImage {
     margin-top: 90px;
+    object-fit: cover;
 
 }
 
