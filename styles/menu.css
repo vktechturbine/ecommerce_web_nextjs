@@ -1,51 +1,190 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&family=Pacifico&display=swap');
 
-.menu__footer{
+.menu__footer {
     background-color: #20273a;
     width: 100%;
 }
-.menu__body{
-    padding-top: 80px;   
-    padding-bottom: 10px;  
-    padding-left: 10px;  
-    padding-right: 10px;  
+
+.menu__body {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.menu__body__section1{
+
+.menu__body__section1 {
     text-align: center;
 }
-.menu__body__section1>h5{
+
+.menu__body__section1>h5 {
     font-family: 'Pacifico', cursive;
-    color: #FEA116 ;
+    color: #FEA116;
     font-weight: 400;
     font-size: 1.25rem;
 
 }
-.menu__body__section1>h5::before{
+
+.menu__body__section1>h5::before {
     display: inline-block;
-        content: "";
-        border-top: .18rem solid #fea116;
-        width: 3rem;
-        margin-left: 0.5rem;
-        margin-bottom: 0.4rem;
-        transform: translateY(-2.4rem);
-        transform: translateX(-0.8rem);
+    content: "";
+    border-top: .18rem solid #fea116;
+    width: 3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.4rem;
+    transform: translateY(-2.4rem);
+    transform: translateX(-0.8rem);
 }
-.menu__body__section1>h5::after{
+
+.menu__body__section1>h5::after {
     display: inline-block;
-        content: "";
-        border-top: .18rem solid #fea116;
-        width: 3rem;
-        margin-left: 0.5rem;
-        margin-bottom: 0.4rem;
-        transform: translateY(-2.4rem);
-        transform: translateX(0.2rem);
+    content: "";
+    border-top: .18rem solid #fea116;
+    width: 3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.4rem;
+    transform: translateY(-2.4rem);
+    transform: translateX(0.2rem);
 }
-.menu__body__section1>h1{
+
+.menu__body__section1>h1 {
     margin-bottom: 3rem;
     font-size: 2.5rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0F172B;
+}
+
+.menu__body__section2__text>small {
+    color: #666565;
+    font-size: .875em;
+    text-align: left;
+}
+
+.menu__body__section2__text>h6 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0F172B;
+}
+
+.menu__body__section2__icon {
+    color: #FEA116;
+    font-weight: 900 !important;
+    font-size: 3em;
+}
+.aactive{
+    border-bottom: 2px solid #FEA116;
+}
+.menu__body__section2__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top:10px;
+}
+.menu__body__section2__item{
+    width: 48%;
+    height: 100px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.menu__body__section2__item > .menu__body__section2__item__text > h5{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu__body__section2__item > .menu__body__section2__item__text > h5 > span > button{
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: #FEA116;
+}
+
+.menu__body__section2__item__buttons{
+   
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top:40px;
+}
+.menu__body__section2__item > .menu__body__section2__item__text > h5 > span > button:hover{
+    background-color: #FEA116;
+}
+/* .menu__body__section2__item{
+    margin-bottom:10px;
+    padding-left: 10px;
+} */
+.menu__body__section2__item > .menu__body__section2__item__text > .menu__body__section2__item__buttons >button{
+    width: 40%;
+    border-radius: 5px;
+     
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left:10px;
+    border-radius: 5px;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.menu__body__section2__item > .menu__body__section2__item__text > .menu__body__section2__item__buttons > button:hover{
+    background-color: #FEA116;
+}
+
+.menu__image{
+    width:21.5%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+.menu__body__section2__item__text{
+    width: 78.5%;
+    padding:5px;
+
+}
+.foodName{
     font-family: "Nunito",sans-serif;
     font-weight: 800;
     line-height: 1.2;
     color: #0F172B;
+    font-size: 1.25rem;
+}
+.foodPrice{
+    color: #FEA116;
+    font-size: 1.25rem;
+    font-family: "Nunito",sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+}
+@media only screen and (max-width: 960px) {
+    .menu__body__section2__items{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu__body__section2__item{
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+    }
+    .foodName{
+        width: 25%;
+        height: 50px;
+    }
+  
+    .menu__image{
+        width:30%;
+        height: 100%;
+        margin-top: -2px;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    }
+    .menu__body__section2__item__buttons{
+   
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+    }
+   
 }
