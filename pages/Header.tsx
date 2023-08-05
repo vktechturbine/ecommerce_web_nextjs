@@ -12,7 +12,7 @@ import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import { useRouter } from 'next/router';
 import "tailwindcss/tailwind.css";
 
-const Header = () => {
+const Header = ({userName}) => {
   const router = useRouter();
   const [isCheck, setCheck] = useState(false);
 
